@@ -1,19 +1,31 @@
 
-html,body{
-	background: #ffffff
-
+html,*,body{
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
-header img{
+#header img{
 	height: 100px
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
     margin-top: 10px;
-    width: 100%;
+    width: 50%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 0 50px;
+}
+
+.nav-link{
+    padding: 2vh 6vw;
+    text-decoration: none;
+    display: block;
+    color: black;
 }
