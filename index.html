@@ -6,17 +6,23 @@
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
-    nav {
-        margin-top: 10px;
-        width: 50%;
+    #nav-bar {
+        width: 40%;
         align-items: center;
         text-align: center;
-        padding: 0 50px;
         display: flex;
     }
     @media only screen and (max-width: 600px) {
         body {
             background-color: #f9f9f9;
+        }
+
+        #video{
+          height: 315px;
+          width: 80%;
+        }
+        #nav-bar{
+          display: none;
         }
     }
     </style>
@@ -24,21 +30,23 @@
 
 <body>
     <header id="header">
-        <img src="https://images.pexels.com/photos/906018/pexels-photo-906018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=90&w=100" id="header-img">
+        <div class="logo"><img src="https://res.cloudinary.com/niojireceipts/image/upload/v1562332697/Screenshot_2019-07-05_at_16.16.10_v76z7z.png" id="header-img"></div>
         <nav id="nav-bar">
-            <a class="nav-link" href="#form">Features</a>
-            <a class="nav-link" href="#how-it-works">How it works</a>
-            <a class="nav-link" href="#header">Pricing</a>
+            <a class="nav-link" href="#form-section">Home</a>
+            <a class="nav-link" href="#how-it-works">Submit Email</a>
+            <a class="nav-link" href="#header">Watch video</a>
         </nav>
     </header>
-    <section>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
-            <input id="submit" type="submit" value="Get Started" class="btn">
-        </form>
+    <div class="container"></div>
+    <section id="form-section">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+          <input id="submit" type="submit" value="Get Started" class="btn">
+      </form>
     </section>
-    <section id="how-it-works" class="flex-container"> <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    <section id="how-it-works"><center><iframe id="video" width="500" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></center>
     </section>
+    
     <script type="text/javascript">
     function submit_email() {
         window.location.href = "https://www.freecodecamp.com/email-submit"

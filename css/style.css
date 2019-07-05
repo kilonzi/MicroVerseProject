@@ -5,39 +5,60 @@ html,*,body{
     padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color:#f9f9f9;
-  }
-}
-
 #header img{
-	height: 100px;
+	height: 50px;
 }
 
 #header{
     display: flex;
     position: fixed;
     justify-content: space-between;
+    width: 100%;
+    top: 0;
 }
 
-nav {
-    margin-top: 10px;
-    width: 50%;
-    align-items: center;
-    text-align: center;
-    padding: 0 50px;
-    display: flex;
+.btn{
+  background-color: rgb(209, 207, 207);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+input[type=email]{
+    padding: 6px 4px;
+}
+
+input[type=email]:focus{
+    outline: none;
+}
+
+.logo{
+    width: 10%;
+    height: 50px;
+    margin-left: 3%;
 }
 
 .nav-link{
-    padding: 2vh 6vw;
+    padding: 2vh 4vw;
     text-decoration: none;
     display: block;
     color: black;
 }
 
-.flex-container {
-  display: flex;
+#form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
 }
+
 
